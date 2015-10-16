@@ -61,3 +61,16 @@ util.inherits(MyError, CustomError);
 ```
 
 This error will come prepackaged with `is(MyError)`.
+
+TODO
+----
+
+- Map HttpError to more errors in specific cases.
+  Some ideas are:
+  - `400` to `BadRequestError`
+  - `401` to `UnauthorizedError`
+  - `403` to `ForbiddenError`
+  - `500` to `InternalServerError`
+- Make HttpError alternate classes *always* have a statusCode anyway (to reduce breakingness of changes when introducing new mappings).
+- Test CustomError extension as a thing in unit tests.
+- Handle the case where CustomError is subclasses wrongly (eg. `var MyError = function() {}; util.inherits(MyError, CustomError);`), and no `this.constructor.name` exists.
