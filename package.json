@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cube-io/node-error/issues"
   },
-  "homepage": "https://github.com/cube-io/node-error"
+  "homepage": "https://github.com/cube-io/node-error",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
 }
