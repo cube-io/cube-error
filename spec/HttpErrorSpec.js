@@ -25,7 +25,7 @@ describe("HttpError", function() {
 
     it("has a stack trace", function() {
         var e = new HttpError(500, "hello kitty");
-        expect(e.stack).toStartWith("HttpError: hello kitty");
+        expect(e.stack).toMatch(/^HttpError: hello kitty/);
     });
 
     it("has a previous error", function() {

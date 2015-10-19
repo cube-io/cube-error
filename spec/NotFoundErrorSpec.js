@@ -13,7 +13,7 @@ describe("NotFoundError", function() {
 
     it("has a stack trace", function() {
         var e = new NotFoundError("hello kitty");
-        expect(e.stack).toStartWith("NotFoundError: hello kitty");
+        expect(e.stack).toMatch(/^NotFoundError: hello kitty/);
     });
 
     it("has a previous error", function() {
