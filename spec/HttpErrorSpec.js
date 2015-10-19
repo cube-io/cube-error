@@ -43,7 +43,7 @@ describe("HttpError", function() {
         expect(e.type).toEqual("HttpError");
     });
 
-    it("has a can be matched with `is`", function() {
+    it("can be matched with `is`", function() {
         var e = new HttpError(500);
         expect(e.is(HttpError)).toBeTruthy();
     });

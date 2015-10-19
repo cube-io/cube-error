@@ -31,7 +31,7 @@ describe("NotFoundError", function() {
         expect(e.type).toEqual("NotFoundError");
     });
 
-    it("has a can be matched with `is`", function() {
+    it("can be matched with `is`", function() {
         var e = new NotFoundError();
         expect(e.is(NotFoundError)).toBeTruthy();
     });
