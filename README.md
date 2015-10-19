@@ -60,7 +60,7 @@ function MyError(message, previousError) {
 util.inherits(MyError, CustomError);
 ```
 
-This error will come prepackaged with `is(MyError)`.
+This error will come prepackaged with `is(MyError)`, `stack`, `message`, and `previousError` fields.
 
 TODO
 ----
