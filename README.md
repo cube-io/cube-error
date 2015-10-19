@@ -14,16 +14,16 @@ Usage
 It is simple to require in the library and throw a standardized error:
 
 ```js
-var Error = require("node-error");
+var CustomErrors = require("node-error");
 
-throw new Error.NotFound("Hello");
+throw new CustomErrors.NotFound("Hello");
 ```
 
 The real power, however, comes with matching an error-type:
 
 ```js
 somethingThatFails(function(error) {
-  if(error && error.is(Error.NotFound)) {
+  if(error && error.is(CustomErrors.NotFound)) {
     //do something
     return;
   }
