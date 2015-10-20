@@ -1,4 +1,4 @@
-node-error
+cube-error
 ==========
 
 This library adds some standardization to errors, and provides an easy way of building new error types.
@@ -6,7 +6,7 @@ This library adds some standardization to errors, and provides an easy way of bu
 Installation
 ------------
 
-    npm install node-error --save
+    npm install cube-error --save
     
 Usage
 -----
@@ -14,7 +14,7 @@ Usage
 It is simple to require in the library and throw a standardized error:
 
 ```js
-var CustomErrors = require("node-error");
+var CustomErrors = require("cube-error");
 
 throw new CustomErrors.NotFound("Hello");
 ```
@@ -51,7 +51,7 @@ We currently support these errors:
 You can build a custom error by inheriting from `Custom`:
 
 ```js
-var CustomError = require("node-error").Custom;
+var CustomError = require("cube-error").Custom;
 
 function MyError(message, previousError) {
   CustomError.call(this, message, previousError);
