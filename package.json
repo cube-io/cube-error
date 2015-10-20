@@ -1,5 +1,5 @@
 {
-  "name": "node-error",
+  "name": "cube-error",
   "version": "0.0.0",
   "description": "Custom errors",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cube-io/node-error"
+    "url": "git://github.com/cube-io/cube-error"
   },
   "author": "CubeIO A/S <devs@cubeio.com> (http://cubeio.com)",
   "license": "-",
   "bugs": {
-    "url": "https://github.com/cube-io/node-error/issues"
+    "url": "https://github.com/cube-io/cube-error/issues"
   },
-  "homepage": "https://github.com/cube-io/node-error",
+  "homepage": "https://github.com/cube-io/cube-error",
   "devDependencies": {
     "jasmine": "^2.3.2"
   }
