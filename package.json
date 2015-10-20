@@ -11,6 +11,16 @@
     "url": "git://github.com/cube-io/cube-error"
   },
   "author": "CubeIO A/S <devs@cubeio.com> (http://cubeio.com)",
+  "contributors": [
+    {
+      "name": "Niels Roesen Abildgaard",
+      "email": "na@cubeio.com"
+    },
+    {
+      "name": "Sven Johansen Hermann",
+      "email": "sjh@cubeio.com"
+    }
+  ],
   "license": "-",
   "bugs": {
     "url": "https://github.com/cube-io/cube-error/issues"
@@ -18,5 +28,6 @@
   "homepage": "https://github.com/cube-io/cube-error",
   "devDependencies": {
     "jasmine": "^2.3.2"
-  }
+  },
+  "files": ["index.js", "lib/"]
 }
