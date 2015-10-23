@@ -21,7 +21,7 @@
       "email": "sjh@cubeio.com"
     }
   ],
-  "license": "-",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/cube-io/cube-error/issues"
   },
