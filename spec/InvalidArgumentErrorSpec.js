@@ -2,17 +2,17 @@ var InvalidArgumentError = require("../index.js").InvalidArgument;
 
 describe("InvalidArgumentError", function() {
     it("has a message", function() {
-        var e = new InvalidArgumentError("world, hello");
+        var e = new InvalidArgumentError("nameOfArg", "world, hello");
         expect(e.message).toEqual("world, hello");
     });
 
     it("defaults to an empty string if it has no message", function() {
-        var e = new InvalidArgumentError();
+        var e = new InvalidArgumentError("nameOfArg");
         expect(e.message).toEqual("");
     });
 
     it("has a stack trace", function() {
-        var e = new InvalidArgumentError("Gemu no jikan");
+        var e = new InvalidArgumentError("nameOfArg", "Gemu no jikan");
         expect(e.stack).toMatch(/^InvalidArgumentError: Gemu no jikan/);
     });
 
@@ -22,7 +22,7 @@ describe("InvalidArgumentError", function() {
             statusCode: 1337,
             psudo: "lorem ipsum"
         };
-        var e = new InvalidArgumentError("Got lorem ipsum error from Yu-Gi-Oh", innerError);
+        var e = new InvalidArgumentError("nameOfArg", "Got lorem ipsum error from Yu-Gi-Oh", innerError);
         expect(e.previousError).toEqual(innerError);
     });
 
@@ -37,7 +37,7 @@ describe("InvalidArgumentError", function() {
     });
 
     it("converts to its stacktrace when printed", function() {
-        var e = new InvalidArgumentError("It is game time!");
+        var e = new InvalidArgumentError("Yu-Gi-Oh", "It is game time!");
         var eAsString = "Found this error: " + e;
         expect(eAsString).toEqual("Found this error: " + e.stack);
     });
