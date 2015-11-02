@@ -31,6 +31,16 @@ describe("InvalidArgumentError", function() {
         expect(e.type).toEqual("InvalidArgumentError");
     });
 
+    it("has a 'invalidArgument' property", function() {
+        var e = new InvalidArgumentError("superMan", "world, hello");
+        expect(e.invalidArgument).toEqual("superMan");
+    });
+
+    it("defaults 'invalidArgument' to an empty string if it has has no arg-name", function() {
+        var e = new InvalidArgumentError();
+        expect(e.invalidArgument).toEqual("");
+    });
+
     it("can be matched with `is`", function() {
         var e = new InvalidArgumentError();
         expect(e.is(InvalidArgumentError)).toBeTruthy();
