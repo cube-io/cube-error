@@ -45,6 +45,11 @@ We currently support these errors:
   Maps common status codes to correct errors.
   `404` maps to `NotFound`.
   Otherwise returns a `HttpError` with a `statusCode` field.
+- `Conflict(message, previousError)`:
+  Used when a resource modification conflicts with existing internal state.
+- `InvalidArgument(invalidArgumentName, message, previousError)`:
+  Can be used as a custom `TypeError` to indicate unexpected input-type or value
+  The error has a `invalidArgument`-field which stores the value of `invalidArgumentName`
 
 ### Building custom errors
 
