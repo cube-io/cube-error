@@ -28,7 +28,7 @@ describe("NotFoundError", function() {
 
     it("has a type", function() {
         var e = new NotFoundError();
-        expect(e.type).toEqual("NotFoundError");
+        expect(e.typeName).toEqual("NotFoundError");
     });
 
     it("can be matched with `is`", function() {

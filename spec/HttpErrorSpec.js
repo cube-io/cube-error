@@ -15,7 +15,7 @@ describe("HttpError", function() {
     it("returns a NotFoundError if status code is 404", function() {
         var e = new HttpError(404);
         expect(e.is(NotFoundError)).toBeTruthy();
-        expect(e.type).toEqual("NotFoundError");
+        expect(e.typeName).toEqual("NotFoundError");
     });
 
     it("defaults to an empty string if it has no message", function() {
@@ -40,7 +40,7 @@ describe("HttpError", function() {
 
     it("has a type", function() {
         var e = new HttpError(500);
-        expect(e.type).toEqual("HttpError");
+        expect(e.typeName).toEqual("HttpError");
     });
 
     it("can be matched with `is`", function() {
