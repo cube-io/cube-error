@@ -28,7 +28,7 @@ describe("InvalidArgumentError", function() {
 
     it("has a type", function() {
         var e = new InvalidArgumentError();
-        expect(e.type).toEqual("InvalidArgumentError");
+        expect(e.typeName).toEqual("InvalidArgumentError");
     });
 
     it("has a 'invalidArgument' property", function() {

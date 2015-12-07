@@ -28,7 +28,7 @@ describe("ConflictError", function() {
 
     it("has a type", function() {
         var e = new ConflictError();
-        expect(e.type).toEqual("ConflictError");
+        expect(e.typeName).toEqual("ConflictError");
     });
 
     it("can be matched with `is`", function() {
