@@ -7,7 +7,7 @@ Installation
 ------------
 
     npm install cube-error --save
-    
+
 Usage
 -----
 
@@ -47,6 +47,8 @@ We currently support these errors:
   Otherwise returns a `HttpError` with a `statusCode` field.
 - `Conflict(message, previousError)`:
   Used when a resource modification conflicts with existing internal state.
+- `MissingArgument(message, previousError)`:
+  Can be used when arguments were expected but not passed. 
 - `InvalidArgument(invalidArgumentName, message, previousError)`:
   Can be used as a custom `TypeError` to indicate unexpected input-type or value
   The error has a `invalidArgument`-field which stores the value of `invalidArgumentName`
