@@ -52,6 +52,8 @@ We currently support these errors:
 - `InvalidArgument(invalidArgumentName, message, previousError)`:
   Can be used as a custom `TypeError` to indicate unexpected input-type or value
   The error has a `invalidArgument`-field which stores the value of `invalidArgumentName`
+- `InternalError(message, previousError)`:
+  Used when an error happens, which can't be recognized as any other error type.
 
 `Custom` should never be instantiated, but is intended to be inherited from.
 
