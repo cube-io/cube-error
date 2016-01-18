@@ -5,5 +5,6 @@ module.exports = {
     is: require("./lib/is.js"),
     Conflict: require("./lib/ConflictError.js"),
     InvalidArgument: require("./lib/InvalidArgumentError.js"),
-    MissingArgument: require("./lib/MissingArgumentError.js")
+    MissingArgument: require("./lib/MissingArgumentError.js"),
+    Internal: require("./lib/InternalError.js")
 };
