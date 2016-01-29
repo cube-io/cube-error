@@ -1,10 +1,10 @@
 {
   "name": "cube-error",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Custom errors",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "node node_modules/.bin/jasmine"
   },
   "repository": {
     "type": "git",
