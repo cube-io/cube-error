@@ -4,7 +4,7 @@
   "description": "Custom errors",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/jasmine"
+    "test": "node node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {
     "type": "git",
