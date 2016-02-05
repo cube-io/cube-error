@@ -1,6 +1,6 @@
 {
   "name": "cube-error",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "Custom errors",
   "main": "index.js",
   "scripts": {
