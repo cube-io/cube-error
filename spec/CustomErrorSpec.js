@@ -8,6 +8,6 @@ describe("CustomError", function() {
 
     it("has a type", function() {
         var e = new CustomError();
-        expect(e.typeName).toEqual("Error");
+        expect(e.typeName).toEqual("CustomError");
     });
 });
