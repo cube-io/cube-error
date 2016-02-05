@@ -10,9 +10,4 @@ describe("CustomError", function() {
         var e = new CustomError();
         expect(e.typeName).toEqual("Error");
     });
-
-    it("is an instance of Error", function() {
-        var e = new CustomError();
-        expect(e instanceof Error).toBeTruthy();
-    });
 });

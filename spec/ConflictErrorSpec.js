@@ -41,9 +41,4 @@ describe("ConflictError", function() {
         var eAsString = "Found this error: " + e;
         expect(eAsString).toEqual("Found this error: " + e.stack);
     });
-
-    it("is an instance of Error", function() {
-        var e = new ConflictError();
-        expect(e instanceof Error).toBeTruthy();
-    });
 });
