@@ -52,6 +52,9 @@ We currently support these errors:
 - `InvalidArgument(invalidArgumentName, message, previousError)`:
   Can be used as a custom `TypeError` to indicate unexpected input-type or value
   The error has a `invalidArgument`-field which stores the value of `invalidArgumentName`
+- `Unauthorized(message, previousError)`:
+  Can be used to indicate that authorization has failed. A message can be included to
+  provide a reason as to what will happen as a consequence.
 - `Internal(message, previousError)`:
   Used when an error happens, which can't be recognized as any other error type.
 
@@ -80,7 +83,6 @@ TODO
 - Map HttpError to more errors in specific cases.
   Some ideas are:
   - `400` to `BadRequestError`
-  - `401` to `UnauthorizedError`
   - `403` to `ForbiddenError`
   - `500` to `InternalServerError`
 - Make HttpError alternate classes *always* have a statusCode anyway (to reduce breakingness of changes when introducing new mappings).
