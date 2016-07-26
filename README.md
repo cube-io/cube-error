@@ -1,6 +1,8 @@
 cube-error
 ==========
 
+**This library is deprecated in favour of [`cubeio-error`](https://github.com/cube-io/cubeio-error).**
+
 This library adds some standardization to errors, and provides an easy way of building new error types.
 
 Installation
